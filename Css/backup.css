@@ -1,0 +1,606 @@
+
+    .header-index img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ul-1{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #204372;
+        position: relative;
+        text-align: center;
+
+    }
+    .ul-1 a{
+        padding: 0 10px;
+    }
+    .menu a{
+        width: auto;
+        color: white;
+        text-decoration: none;
+
+    }
+    .menu ul li{
+       list-style: none;
+       text-transform: uppercase;
+       background-color: #204372;
+    }
+    .menu ul ul{
+        display: none;
+    }
+    .menu ul ul ul li{
+        display: none;
+        margin-left: 101%;
+    }
+    .menu ul li:hover ul{
+        position: absolute;
+        display: block;
+        
+    }
+    .menu ul ul li:hover ul{
+        display: block;
+        
+    }
+
+    /* Slider*/
+
+    .slider {
+        margin: 0 auto;
+        width: 1200px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 400%;
+        height: 400px;
+        display: flex;
+
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 25%;
+
+
+    }
+
+    .slide img {
+        width: 1200px;
+
+    }
+
+    .manual-navigation {
+        position: absolute;
+        width: 1200px;
+        margin-top: -10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid rgb(255, 255, 255);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background-color: white;
+    }
+
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+        margin-left: -25%;
+    }
+
+    #radio3:checked~.first {
+        margin-left: -50%;
+    }
+
+    #radio4:checked~.first {
+        margin-left: -75%;
+    }
+
+
+
+
+    /*ultimo CSS feito*/
+    :root {
+        --cor-bg: rgba(32, 67, 114, 1);
+        --cor-ul-ul: rgba(32, 67, 114, .8);
+        --a-cor: rgb(255, 255, 255);
+    }
+    
+    body {
+        height: 100%;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        text-decoration: none;
+        list-style: none;
+    
+    }
+    
+    .button-open span,
+    .button-close span {
+        font-size: 32px;
+        color:rgb(199, 74, 74);
+    }
+    
+    .button-open {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    
+    }
+    
+    .button-close {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /*MOBILE SCREEN*/
+    @media screen and (max-width: 719px) {
+        a {
+            color: white;
+            border: none;
+        }
+    
+        #menu-nav ul {
+            transition: all 1s;
+        }
+    
+        .menu ul {
+    
+            width: 50%;
+        }
+    
+        .menu ul li {
+            position: relative;
+        }
+    
+        .menu ul li {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(138, 65, 65);
+    
+    
+        }
+    
+        .menu ul ul {
+            width: 100%;
+        }
+    
+        .menu ul li:hover {
+            background-color: rgb(199, 74, 74);
+        }
+    
+        .hidden,
+        .li-hidden,
+        .fake-li-li {
+            display: none;
+        }
+    
+        .li-principal:hover ul {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            top: 0;
+            position: absolute;
+            margin-left: 3.1em;
+        }
+    
+        /* .menu ul ul li{
+            background-color: red;
+        }
+      */
+        .imagem-logo {
+            width: 100%;
+        }
+    
+        .menu-button img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+    
+    
+        }
+    
+        .close-button {
+            width: 100%;
+            height: auto;
+            text-align: right;
+        }
+    
+        .close-button a {
+            padding: 0;
+            margin: 0;
+        }
+    
+        .btn-close {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+    
+        }
+        .btn-open{
+            display: inline-block;
+            position: static;
+        }
+    
+    
+        /* .btn-1{
+            border-bottom: 2px solid var(--a-cor);
+            padding-top: 7px;
+            box-sizing: border-box;
+        }
+        .btn-2{
+            border-bottom: 2px solid var(--a-cor);
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+        .btn-3{
+            border-bottom: 2px solid var(--a-cor);
+            padding-top: 5px;
+        } */
+    
+        /* Slider*/
+    
+        .slider {
+            padding-top: 8px;
+            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+    
+        .slides {
+            width: 400%;
+            height: 400px;
+            display: flex;
+    
+        }
+    
+        .footer-page {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(197, 78, 78);
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .footer-page ul {
+            height: 60px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .footer-page ul li {
+            display: inline;
+        }
+    
+        .ul-icons li a {
+            margin: 0 50px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 60px;
+        }
+    
+        /* SLIDER */
+        .slides input {
+            display: none;
+    
+        }
+    
+        .slide {
+            width: 25%;
+    
+    
+        }
+    
+        .slide img {
+            width: 100vw;
+    
+    
+        }
+    
+        .manual-navigation {
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            height: -40%;
+        }
+    
+        .manual-btn {
+            border: 2px solid rgb(33, 59, 145);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s;
+            display: none;
+        }
+    
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;
+        }
+    
+        .manual-btn:hover {
+            background-color: white;
+        }
+    
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+    
+        #radio2:checked~.first {
+            margin-left: -25%;
+        }
+    
+        #radio3:checked~.first {
+            margin-left: -50%;
+        }
+    
+        #radio4:checked~.first {
+            margin-left: -75%;
+        }
+    
+    }
+    
+    
+    /*DESKTOP SCREEN*/
+    @media screen and (min-width: 720px) {
+    
+        body {
+            height: 100%;
+        }
+    
+        .li-principal {
+            text-align: center;
+            min-width: 14.28%;
+            max-width: 14.28%;
+        }
+    
+        .menu ul ul li a {
+            width: max-content;
+            text-align: center;
+        }
+    
+    
+        .menu ul {
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(231, 97, 97);
+    
+        }
+    
+        .menu-button {
+            display: none;
+        }
+    
+        .close-button {
+            display: none;
+        }
+    
+        .imagem-logo {
+            width: 500px;
+        }
+    
+        .hidden li:first-child {
+            height: 8px;
+            background-color: rgba(255, 255, 255);
+        }
+    
+        .hidden li:first-child:hover {
+    
+            background-color: white;
+        }
+    
+        .menu ul li a {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            color: var(--a-cor);
+        }
+    
+        .menu ul ul {
+            background-color: rgba(231, 97, 97, .7);
+            transition: all .5s 1s;
+            display: none;
+            height: max-content;
+            position: relative;
+    
+        }
+    
+        .menu ul ul,
+        .menu ul ul:not(:first-child) {
+            border-radius: 10px;
+        }
+    
+        /* .menu ul ul li {
+    
+            border-radius: 10px;
+    
+        } */
+    
+        .menu ul ul li:hover {
+            background-color: rgba(197, 78, 78, .7);
+        }
+    
+        .menu ul ul a {
+            display: inline-block;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+    
+        .fake-li {
+            background-color: white;
+            max-height: 15px;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .menu ul li:hover ul {
+            transition: all .5s;
+            display: block;
+        }
+    
+    
+        .menu ul ul ul {
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            margin-left: 101%;
+            top: 0;
+    
+        }
+    
+    
+        .menu ul ul li:nth-child(2):hover ul {
+            visibility: visible;
+            background-color: rgba(231, 97, 97, .5);
+        }
+    
+        .li-hidden li:nth-child(1):not(:first-child) {
+            background-color: rgba(231, 97, 97, .5);
+            height: 50px;
+        }
+    
+        .footer-page {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(197, 78, 78);
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .footer-page {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(197, 78, 78);
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .footer-page ul {
+            height: 60px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .footer-page ul li {
+            display: inline;
+        }
+    
+        .ul-icons li a {
+            color: white;
+            margin: 0 50px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 60px;
+        }
+    
+        /* Slider*/
+    
+        .slider {
+            padding-top: 8px;
+            margin: 0 auto;
+            width: 1200px;
+            height: 500px;
+            overflow: hidden;
+        }
+    
+        .slides {
+            width: 400%;
+            height: 400px;
+            display: flex;
+    
+        }
+    
+        .slides input {
+            display: none;
+        }
+    
+        .slide {
+            width: 25%;
+    
+    
+        }
+    
+        .slide img {
+            width: 1200px;
+    
+        }
+    
+        .manual-navigation {
+            position: absolute;
+            width: 1200px;
+            margin-top: -10px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .manual-btn {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s;
+        }
+    
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;
+        }
+    
+        .manual-btn:hover {
+            background-color: white;
+        }
+    
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+    
+        #radio2:checked~.first {
+            margin-left: -25%;
+        }
+    
+        #radio3:checked~.first {
+            margin-left: -50%;
+        }
+    
+        #radio4:checked~.first {
+            margin-left: -75%;
+        }
+    
+    
+    }
