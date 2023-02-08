@@ -7,17 +7,23 @@
 }
 
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 640px) {
+
+    body {
+        position: static;
+    }
+
     .imagem-logo {
         width: 100vw;
         margin: 0 auto;
     }
 
-    #menu-nav{
+    #menu-nav {
         display: none;
         margin-left: 100%;
     }
-    #btn-close{
+
+    #btn-close {
         display: none;
     }
 
@@ -26,28 +32,71 @@
         display: none;
     }
 
-    .slides {
-        display: flex;
-        position: relative;
-     
-    }
-
-
+ 
     .slider {
         width: 100vw;
-        margin: 0 auto;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
         position: relative;
         height: 160px;
         overflow: hidden;
+        margin-top: 5px;
     }
 
-    .slider img {
-        border-radius: 20px;
-        width: 100vw;
+    .slides {
+        width: 90vw;
         height: 160px;
-       
+        position: relative;
+        display: flex; 
+        overflow: hidden;
+    }
+
+    .image-dog {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-dog img {
+        width: 90vw;
+        border-radius: 20px;
 
     }
+
+    .btn-span {
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+    }
+
+    .btn-span-left {
+        position: absolute;
+        left: 0;
+        height: 160px;
+        display: inline-flex;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .btn-span-right {
+        position: absolute;
+        right: 0;
+        height: 160px;
+        display: inline-flex;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .btn-span-left span,
+    .btn-span-right span {
+        color: red;
+        margin-left: -1px;
+    }
+    .btn-span-right span{
+        margin-right: -1px;
+    }
+
+
     #radio1:checked~.first {
         margin-left: 0;
     }
@@ -64,28 +113,6 @@
         margin-left: -300%;
     }
 
-    
-    .btn-span {
-        color: rgb(255, 255, 255);
-        font-size: 52px;
-    }
-
-    .btn-span-left {
-
-        position: absolute;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        left: 0;
-    }
-
-    .btn-span-right {
-        position: absolute;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        right: 0;
-    }
     /*SLIDER END*/
 
 
@@ -97,19 +124,21 @@
         width: 100%;
         display: none;
     }
-    .menu ul ul ul li{
-       display: none;
+
+    .menu ul ul ul li {
+        display: none;
     }
+
     .menu ul ul li:hover ul li {
         width: 100%;
         margin: 0 auto;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
-     }
+    }
 
 
-    .menu ul li:hover{
+    .menu ul li:hover {
         background-color: rgba(35, 82, 126, .7);
     }
 
@@ -131,6 +160,7 @@
         flex-direction: column;
 
     }
+
     .btn-open button {
         background-color: transparent;
         border: none;
@@ -194,15 +224,5 @@
         line-height: 50px;
     }
 
-    .imgens-dog{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .imgens-dog img{
-        
-        display: block;
-        width: 300px;
-        margin: 0 auto;
 
-    }
 }

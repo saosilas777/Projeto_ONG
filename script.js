@@ -4,7 +4,7 @@ document.getElementById("radio" + count).checked = true;
 
 setInterval(function () {
     changeImg();
-}, 5000)
+}, 3000)
 
 function changeImg() {
 
@@ -69,10 +69,8 @@ function openSubMenu() {
         document.getElementById("openSubMenu").style.display = 'block';
 
     }
-    else {
-        document.getElementById("openSubMenu").style.display = 'none';
-        count++;
-    }
+    
+    
 
 
 }
