@@ -9,10 +9,9 @@
 
 @media screen and (max-width: 640px) {
 
-    body {
-        position: static;
+    body{
+        background-color: rgba(35, 82, 126,.3);
     }
-
     .imagem-logo {
         width: 100vw;
         margin: 0 auto;
@@ -32,23 +31,22 @@
         display: none;
     }
 
- 
     .slider {
         width: 100vw;
         display: inline-flex;
         flex-direction: row;
         justify-content: center;
         position: relative;
-        height: 160px;
+        min-height: 160px;
         overflow: hidden;
-        margin-top: 5px;
+        margin-top: 3px;
     }
 
     .slides {
         width: 90vw;
-        height: 160px;
+        min-height: 160px;
         position: relative;
-        display: flex; 
+        display: flex;
         overflow: hidden;
     }
 
@@ -61,18 +59,17 @@
     .image-dog img {
         width: 90vw;
         border-radius: 20px;
-
     }
 
     .btn-span {
         color: rgb(255, 255, 255);
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .btn-span-left {
         position: absolute;
         left: 0;
-        height: 160px;
+        min-height: 160px;
         display: inline-flex;
         align-items: center;
         z-index: 9;
@@ -81,7 +78,7 @@
     .btn-span-right {
         position: absolute;
         right: 0;
-        height: 160px;
+        min-height: 160px;
         display: inline-flex;
         align-items: center;
         z-index: 9;
@@ -89,13 +86,13 @@
 
     .btn-span-left span,
     .btn-span-right span {
-        color: red;
+        color: rgb(35, 82, 126);
         margin-left: -1px;
     }
-    .btn-span-right span{
+
+    .btn-span-right span {
         margin-right: -1px;
     }
-
 
     #radio1:checked~.first {
         margin-left: 0;
@@ -114,8 +111,6 @@
     }
 
     /*SLIDER END*/
-
-
     a {
         color: #fff;
     }
@@ -137,7 +132,6 @@
         align-items: center;
     }
 
-
     .menu ul li:hover {
         background-color: rgba(35, 82, 126, .7);
     }
@@ -158,14 +152,17 @@
     .menu ul li:hover ul {
         display: flex;
         flex-direction: column;
-
     }
 
     .btn-open button {
-        background-color: transparent;
+        color: #fff;
+        margin-left: 28px;
+        background-color: rgb(35, 82, 126);
         border: none;
+        border-radius: 5px;
         display: inline-flex;
         flex-direction: row;
+        padding: 5px;
     }
 
     .btn-close button {
@@ -177,9 +174,7 @@
         border: none;
         display: flex;
         /* margin-right: 0; */
-        color: red;
-
-
+        color: rgb(35, 82, 126);
     }
 
     .button-open span {
@@ -188,7 +183,6 @@
 
     .menu-text {
         font-size: 20px;
-        /* padding-left: 5px; */
     }
 
     .btn-close span {
@@ -199,6 +193,74 @@
         position: absolute;
         right: 0;
     }
+    .folder-cards{
+        width: 100vw;
+        height: 155px;
+        
+        overflow: hidden;
+    }
+
+    .folder-cards div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .folder-cards img {
+        display: block;
+        width: 300px;
+        height: 155px;
+        
+        
+        
+
+    }
+    @keyframes moveUp {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-157px);
+        }
+        
+    }
+
+    #slide-show{
+        width: 300px;
+        animation: moveUp 15s infinite;
+        animation-delay: 2s;
+    }
+
+    #slide-show:hover{
+        animation-play-state: paused;
+    }
+
+    .youtube-cards {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        width: 100vw;
+        height: 315px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .youtube-cards a{
+        font-weight: bold;
+        border-bottom: 2px solid rgb(35, 82, 126);
+    }
+    .youtube-cards a:hover{
+        border-bottom: 2px solid #fff;
+        color: rgb(35, 82, 126);
+    }
+    .youtube-cards h3,p{
+        color: rgb(35, 82, 126);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px 0;
+    }
+    
+
 
     .footer-page {
         width: 100%;
@@ -215,14 +277,12 @@
 
     .footer-page ul li {
         display: inline-block;
-
+        margin-top: 8px;
     }
 
     .ul-icons li a {
-        margin: 0 50px;
+        margin:0 50px;
         font-size: 24px;
         line-height: 50px;
     }
-
-
 }
